@@ -17,5 +17,9 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-    fmt.Println(messages)
+
+
+    for person, message := range messages {
+        fmt.Printf("Person: [%s] - Message: [%s]\n", person, message)
+    }
 }
